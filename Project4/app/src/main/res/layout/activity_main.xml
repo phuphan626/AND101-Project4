@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".MainActivity">
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/baseText"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_marginLeft="52dp"-->
+<!--        android:text="Base"-->
+<!--        android:textSize="20dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/inputText"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="1.0" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/inputText"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        android:layout_marginTop="88dp"-->
+<!--        android:inputType="number"-->
+<!--        android:textSize="18dp"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/baseText"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tipPercent"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_marginLeft="52dp"-->
+<!--        android:layout_marginTop="56dp"-->
+<!--        android:text="Tip"-->
+<!--        android:textSize="20dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/baseText" />-->
+
+<!--    <SeekBar-->
+<!--        android:id="@+id/seekBar"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        android:layout_marginTop="56dp"-->
+<!--        android:max="30"-->
+<!--        android:progress="15"-->
+<!--        app:layout_constraintLeft_toRightOf="@+id/tipPercent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/inputText" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tipAmount"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_marginLeft="52dp"-->
+<!--        android:layout_marginTop="64dp"-->
+<!--        android:text="Tip"-->
+<!--        android:textSize="20dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tipPercent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tipAmountDisplay"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        android:layout_marginTop="56dp"-->
+<!--        android:inputType="number"-->
+<!--        android:textSize="18dp"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/tipAmount"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/seekBar" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/totalAmount"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_marginLeft="52dp"-->
+<!--        android:layout_marginTop="64dp"-->
+<!--        android:text="Total"-->
+<!--        android:textSize="20dp"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tipAmount" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/totalAmountDisplay"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        android:layout_marginTop="56dp"-->
+<!--        android:inputType="number"-->
+<!--        android:textSize="18dp"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/totalAmount"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tipAmountDisplay" />-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/etBillAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bill Amount"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/etTipPercentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tip Percentage"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate"/>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tip: $0.00"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
